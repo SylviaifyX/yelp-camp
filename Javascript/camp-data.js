@@ -5,7 +5,8 @@ export const camps = [
         creator: "",
         price: "",
         short_description: "",
-        long_description: ""
+        long_description: "",
+        image: ""
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const camps = [
         creator: "",
         price: "",
         short_description: "",
-        long_description: ""
+        long_description: "",
+        image: ""
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const camps = [
         creator: "",
         price: "",
         short_description: "",
-        long_description: ""
+        long_description: "",
+        image: ""
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const camps = [
         creator: "",
         price: "",
         short_description: "",
-        long_description: ""
+        long_description: "",
+        image: ""
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ export const camps = [
         creator: "",
         price: "",
         short_description: "",
-        long_description: ""
+        long_description: "",
+        image: ""
     },
     {
         id: 6,
@@ -45,6 +50,7 @@ export const camps = [
         creator: "",
         price: "",
         short_description: "",
-        long_description: ""
+        long_description: "",
+        image: ""
     }
 ];
