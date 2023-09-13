@@ -1,55 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        @media(max-width: 768px) {
-          .add-yours {
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        rel="stylesheet"
+        />
+        <style>
+        @media (max-width: 768px) {
+            .add-yours {
             margin-top: 10px;
-          }
-          .nav-infos{
+            }
+            .nav-infos {
             display: none;
-          }
-          .hamburger {
+            }
+            .hamburger {
             display: block;
-          }
-          .home-link {
+            }
+            .home-link {
             display: none;
-          }
+            }
         }
-      </style>
-    <title>Camp List</title>
-</head>
-<body class="px-5 py-2 lg:px-10 lg:pt-12">
-    <header>
-        <nav class="container mx-auto flex items-center justify-between px-10">
-          <div class="flex items-center">
-            <img src="./Assets/Logo.svg" alt="logo">
-            
-            <a class="home-link ml-8 text-gray-800 font-semibold" href="#">Home</a>
-          </div>
-  
-          <div class=" hamburger hidden flex items-center">
-            <img src="./Assets/Hamburger Menu.svg" alt="logo">
-          </div>
-  
-          <div class="nav-infos flex items-center">
-            <a  class="text-gray-600 font-semibold" href="#">Login</a>
-            &nbsp;
-            <button class="primary-btn ml-6 bg-gray-800 px-5 py-3 hover:bg-gray-500 text-white rounded-md">Create an account</button>
-          </div>
-        </nav>
-      </header>
+        </style>
+        <title>Camp List</title>
+    </head>
+    <body class="px-5 py-2 lg:px-10 lg:pt-12">
+        <header>
+            <nav class="container mx-auto flex items-center justify-between px-10">
+                <div class="flex items-center">
+                <img src="./Assets/Logo.svg" alt="logo"/>
+                <a class="home-link ml-8 text-gray-800 font-semibold" href="#"
+                    >Home</a>
+                </div>
 
-      <main class="container mx-auto px-5 py-2 lg:px-10 lg:pt-12">
+                <div class="hamburger hidden flex items-center">
+                <img src="./Assets/Hamburger Menu.svg" alt="hamburger"/>
+                </div>
 
-      </main>
+                <div class="nav-infos flex items-center">
+                <a class="text-gray-600 font-semibold" href="#">Login</a>
+                &nbsp;
+                <button
+                    class="primary-btn ml-6 bg-gray-800 px-5 py-3 hover:bg-gray-500 text-white rounded-md">
+                    Create an account
+                </button>
+                </div>
+            </nav>
+        </header>
 
-      <footer class="p-10">
-        <img src="./Assets/Logo.svg" alt="logo">
-      </footer>
-</body>
+        <main class="container mx-auto px-5 py-2 lg:px-10 lg:pt-12">
+            <section class="rounded-md bg-gray-200 pt-12 p-6 mb-20 text-gray-800">
+                <section class="container lg:ml-10">
+                    <h2 class="mb-2 text-4xl font-bold">Welcome to YelpCamp!</h2>
+                    <p class="mb-2 text-lg">
+                        View our handpicked campgrounds from all over<br/>
+                        the world, or add your own.
+                    </p>
+                    
+                    <section class="sm:grid sm:grid-cols-1 lg:flex md:flex">
+                        <section class="relative col-span-1 lg:mr-5 mb-4">
+                            <section
+                                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <img src="./Assets/Search Icon.svg" alt="" />
+                            </section>
+                            <input
+                                type="text"
+                                class="block sm:w-full w-full h-15 p-4 pl-10 text-center text-gray-800 rounded-md bg-gray-50"
+                                id="search-input"
+                                placeholder="Search for camps"
+                            />
+                        </section>
+                        <section class="sm:col-span-1 lg:flex-grow sm:w-full">
+                            <button
+                                type="button"
+                                onclick="handleSearch()"
+                                class="w-full sm:w-full lg:w-auto bg-gray-800 px-7 py-4 hover:bg-gray-500 text-white rounded-md"
+                            >
+                                Search
+                            </button>
+                        </section>
+                    </section>
+                    <p class="add-yours sm:mt-2 mb-5 text-lg underline">
+                        <a href="#">Or add your own campground</a>
+                    </p>
+                </section>
+            </section>
+            <section
+                class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8"
+                id="camp-container"
+            ></section>
+        </main>
+
+        <footer class="p-10">
+            <img src="./Assets/Logo.svg" alt="logo" />
+        </footer>
+    </body>
 </html>
