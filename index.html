@@ -1,13 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/input.css" rel="stylesheet" />
+    <link href="./styles/output.css" rel="stylesheet" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    /> -->
+
     <title>Yelp Camp</title>
-</head>
-<body>
-     <!-- for the landing page, we divide the page into sections -->
-</body>
+  </head> 
+
+  <body>
+    <!-- for the landing page, to divide the page into sections -->
+    <!-- 1. first session on logo and image -->
+    <!-- <img class="m-8" src="./YelpCamp_project/Assets/Logo.svg" />  -->
+    <div class="flex flex-col gap-y-4 lg:flex-row-reverse mb-0">
+      <div class="mb-5">
+        <picture>
+          
+          <!-- <sorce class="lg:h-screen" srcset="./YelpCamp_project/Assets/Hero Image.jpg" > -->
+          <img
+            class="object-cover w-screen h-72 md:h-full lg:h-screen"
+            src="./Assets/Hero Image (Tablet and Mobile).jpg"
+            alt="A campground picture"
+          />
+        </picture>
+      </div>
+
+      <!-- 2. second section on the other body, it has div elements to divide into smaller bits -->
+      <div class="container px-4 md:px-10 lg:m-14">
+
+        <!-- heading and paragraphn -->
+        <div>
+          <h2
+            class="mb-3 font-serif font-extrabold text-3xl lg:font-normal md:text-5xl leading-tight"
+          >
+            Explore the best camps on Earth
+          </h2>
+
+          <p class="text-l">
+            YuleCamp is a curated list of the best spot on Earth. Unfiltered and
+            unbiased reviews
+          </p>
+        </div>
+
+        <!-- list of the services available -->
+        <div>
+          <ul class="my-3 flex flex-col gap-3">
+            <li class="flex gap-3">
+              <span>
+                <img src="./Assets/Checkmark.svg" />
+              </span>
+              Add your own camp suggestion
+            </li>
+            <li class="flex gap-3">
+              <span>
+                <img src="./Assets/Checkmark.svg" />
+              </span>
+              Leave reviews and experiences
+            </li>
+            <li class="flex gap-3">
+              <span>
+                <img src="./Assets/Checkmark.svg" />
+              </span>
+              See location for all camps
+            </li>
+          </ul>
+          <a href="./searchpage.html" target="_blank">
+            <button
+              class="max-h-fit max-w-fit my-2 p-4 bg-slate-900 rounded-md text-zinc-300 text-lg hover:drop-shadow-2xl"
+              type="submit"
+            >
+              View Campgrounds
+            </button>
+          </a>
+        </div>
+
+        <!-- footer containing sponsors -->
+        <div>
+          <footer>
+            <p class="mt-5 text-lg">Patnered with:</p>
+            <div class="flex flex-nowrap mt-3 mb-8">
+              <img src="./Assets/Airbnb.svg" />
+              <img src="./Assets/Booking.svg" />
+              <img src="./Assets/Plum Guide.svg" />
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
 </html>
