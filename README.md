@@ -1,2 +1,0 @@
-# yelp-camp
- Camp task
