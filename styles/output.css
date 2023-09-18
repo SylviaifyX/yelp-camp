@@ -639,6 +639,14 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -679,8 +687,9 @@ video {
   margin: 0.25rem;
 }
 
-.m-8 {
-  margin: 2rem;
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .my-2 {
@@ -691,6 +700,11 @@ video {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-0 {
@@ -707,6 +721,10 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-2 {
@@ -1993,10 +2011,6 @@ video {
   font-weight: 800;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -2470,22 +2484,17 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:h-full {
-    height: 100%;
+  .md\:left-10 {
+    left: 2.5rem;
   }
 
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .md\:h-full {
+    height: 100%;
   }
 
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .md\:pl-8 {
-    padding-left: 2rem;
   }
 
   .md\:text-5xl {
@@ -2499,16 +2508,16 @@ video {
     margin: 3.5rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:h-screen {
     height: 100vh;
   }
 
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
-  }
-
-  .lg\:gap-y-4 {
-    row-gap: 1rem;
   }
 
   .lg\:font-normal {
