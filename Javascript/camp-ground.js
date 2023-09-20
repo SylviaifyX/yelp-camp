@@ -64,4 +64,5 @@ const campgroundHtml =`
 <section class="campground">
 <img src "${camp.Image}" alt="${camp.name}" class="campground-img w-full mb-3>
 <div class="flex flex-row justify-between mb-3">
-<h2 class="lg:text-2xl md:text-xl font-bold">${camp.name}`
+<h2 class="lg:text-2xl md:text-xl font-bold">${camp.name}</h2>
+<p class ="text-gray-900 lg: text-xl text-sm">$`
