@@ -10,7 +10,7 @@ const camps = [
     {
       id: 2,
       name: "Calagus Islands",
-      creator: "Opeyemi Agbaje",
+      creator: "Gloria Jumai",
       price: "$104.99/night",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolore quia veniam maxime quam. Aspernatur magni in dolores at animi molestiae error. Fuga officiis necessitatibus magni modi? Esse, pariatur totam?",
       image: "./Assets/Camp Images/High Quality Images/Calagus-Islands.jpg"
@@ -18,7 +18,7 @@ const camps = [
     {
       id: 3,
       name: "Onay Beach",
-      creator: "Opeyemi Agbaje",
+      creator: "Adediran Florish",
       price: "$104.99/night",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolore quia veniam maxime quam. Aspernatur magni in dolores at animi molestiae error. Fuga officiis necessitatibus magni modi? Esse, pariatur totam?",
       image: "./Assets/Camp Images/High Quality Images/Onay-Beach.jpg"
@@ -26,7 +26,7 @@ const camps = [
     {
       id: 4,
       name: "Seven Sisters Waterfall",
-      creator: "Opeyemi Agbaje",
+      creator: "Ifeoma Okpara",
       price: "$104.99/night",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolore quia veniam maxime quam. Aspernatur magni in dolores at animi molestiae error. Fuga officiis necessitatibus magni modi? Esse, pariatur totam?",
       image: "./Assets/Camp Images/High Quality Images/Seven-Sisters-Waterfall.jpg"
