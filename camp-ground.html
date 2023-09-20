@@ -5,9 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        button{
+            border-radius: 3px;
+        }
+        input{
+            border-radius: 3px;
+        }
+        @media(min-width: 768px) and(max-width:1022px) {
+            .search-btn{
+                width: 100px;
+                margin-left: 10px;
+            }
+        }
+        @media(max-width: 959px){
+            .add-yours {
+                margin-top: 10px;
+            }
+            .nav-infos{
+                display:none;
+            }
+            .hamburger{
+                display:block;
+            }
+            .home-link {
+                display:none
+            }
+            .nav-container{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
     <title>Camp Ground</title>
+
 </head>
+
 <body>
+    <header>
+        <nav class="nav-container mx-auto flex items-center justify-between px-10">
+            <div class="flex items-center">
+                <a href="index.html"><img src="./Assets/Logo.svg" alt="Logo"></a>
+                <a href="camp-list.html" class="home-link ml-8 text-gray-800 font-semibold">Home</a>
+            </div>
+        <button class="hamburger hidden flex items-center">
+            <img src="./Assets/Hamburger Menu.svg" alt="Logo">
+        </button>
+        <div class="nav-infos flex items-center">
+            <a href="#" class="text-gray-600 font-semibold">Login</a>
+            &nbsp;
+            <button class="primary-btn ml-6 bg-gray-900 px-5 py-3 hover:bg-gray-500 text-white mt-5">
+                Create an account
+            </button>
+        </div>
+        </nav>
+</header>
     
 </body>
-</html>
+</html
