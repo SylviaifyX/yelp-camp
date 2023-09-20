@@ -10,9 +10,7 @@
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [issues](#issues)
-  - [Usage](#usage)
-  - [Features](#features)
-  - [Contributing](#contributing)
+  - [Contributors](#contributors)
 
 ## About
 
