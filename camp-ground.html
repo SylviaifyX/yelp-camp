@@ -1,15 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />    
-    <link href="./Styles/camp-ground.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        button{
+            border-radius: 3px;
+        }
+        input{
+            border-radius: 3px;
+        }
+        @media(min-width: 768px) and(max-width:1022px) {
+            .search-btn{
+                width: 100px;
+                margin-left: 10px;
+            }
+        }
+        @media(max-width: 959px){
+            .add-yours {
+                margin-top: 10px;
+            }
+            .nav-infos{
+                display:none;
+            }
+            .hamburger{
+                display:block;
+            }
+            .home-link {
+                display:none
+            }
+            .nav-container{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
     <title>Camp Ground</title>
-  </head>
-  <body></body>
-</html>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container mx-auto flex items-center justify-between px-10">
+            <div class="flex items-center">
+                <a href="index.html"><img src="./Assets/Logo.svg" alt="Logo"></a>
+                <a href="camp-list.html" class="home-link ml-8 text-gray-800 font-semibold">Home</a>
+            </div>
+        <button class="hamburger hidden flex items-center">
+            <img src="./Assets/Hamburger Menu.svg" alt="Logo">
+        </button>
+        <div class="nav-infos flex items-center">
+            <a href="#" class="text-gray-600 font-semibold">Login</a>
+            &nbsp;
+            <button class="primary-btn ml-6 bg-gray-900 px-5 py-3 hover:bg-gray-500 text-white mt-5">
+                Create an account
+            </button>
+        </div>
+        </nav>
+</header>
+<section class="main-container flex lg:flex-row justify-between p-10 px-5 py-2 lg:px-10 lg:pt-12">
+    <aside class="map-div lg:w-1/3 lg:h-2/4 border border-gray-300 rounded lg:p-12 p-5">
+        <img class="map w-full lg:h-full" src="./Assets/Map.png" alt="map">
+ </aside>
+ <main class="lg:w-3/5">
+    <section id="campground-container" class="lg:p-12 p-5 lg:mt-10 border border-gray-300 rounded">
+        <div>
+            <div class="flex flex-row justify-between mb-5">
+                <h3 class="font-bold lg:text-xl">Agbaje Opeyemi</h3>
+                <p class="text-gray-800">13h ago</p>
+            </div>
+            <p class="text-gray-800 mb-5">
+            Honestly one of the best experiences ever,
+            took us a while to figure out how to get there but it was amazing!
+            </p>
+        </div>
+        <hr class="mb-5">
+        <div>
+            <div class="flex flex-row justify-between mb-5">
+                <h3 class="font-bold lg:text-xl">Gloria Jumai</h3>
+                <p class="text-gray-800">1 day ago </p>
+            </div>
+            <p class="text-gray-800 mb-5">
+            Travelling changes you as a person,you gain more perspective, 
+            this is the perfect spot to do that.
+            </p>
+        </div>
+        <hr class="mb-5">
+        <div>
+            <div class="flex flex-row justify-between mb-5">
+                <h3 class="font-bold lg:text-xl">Adediran flourish</h3>
+                <p class="text-gray-800">3 days ago</p>
+            </div>
+            <p class="text-gray-800 mb-5">
+            Definitely recommended going there,not too far and not a lot of 
+            people to ruin the experience
+            </p>
+        </div>
+        <hr class="mb-5">
+        <div>
+            <div class="flex flex-row justify-between mb-5">
+                <h3 class="font-bold lg:text-xl">Ifeoma</h3>
+                <p class="text-gray-800">3 days ago</p>
+            </div>
+            <p class="text-gray-800 mb-5">
+             Definitely recommended going there,not toofar and not a lot of people to ruin the experience.
+            </p>
+        </div>
+        <hr class="mb-5">
+
+        <div class="flex flex-row lg:place-content-end">
+            <button class="primary-btn flex flex-row bg-gray-900 px-5 py-3 hover: bg-gray-500 text-white">
+            <img src="./Assets/Chat Bubble.svg" alt="">
+            &nbsp;Leave a Review
+          
+            </button>
+        </div>
+    </section>
+  </main>
+</section>
+
+<footer class="p-10">
+    <img src="./Assets/Logo.svg" alt="logo">
+</footer>
+<script src="./Javascript/camp-ground.js"></script>
+    
+</body>
+</html
