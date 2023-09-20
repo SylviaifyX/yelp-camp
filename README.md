@@ -14,7 +14,7 @@
 
 ## About
 
-This is a group assignent and as such involve the collaboration of 3 developers.
+This is a group assignent and as such involve the collaboration of 4 developers.
 Agbaje Opeyemi Esther
 Adediran Florish
 Ifeoma Okpara
