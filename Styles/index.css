@@ -1,0 +1,38 @@
+button {
+  border-radius: 3px;
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    flex-direction: row;
+  }
+}
+@media (max-width: 1023px) {
+  .desktop-view {
+    display: none;
+  }
+
+  .tab-view {
+    display: block;
+  }
+  .main-container {
+    min-width: 100vw;
+  }
+  .explore-text {
+    font-size: xx-large;
+  }
+  .image-div {
+    height: 300px;
+  }
+  .image-div img {
+    height: 300px;
+    object-position: center;
+    object-fit: cover;
+  }
+  .navibar {
+    position: relative;
+    top: 0;
+    float: left;
+    margin: 25px 0px 25px 25px;
+  }
+}
