@@ -1,0 +1,49 @@
+.campground img {
+  border-radius: 5px;
+}
+.main-container {
+  min-height: 100vh;
+}
+.map-div {
+  justify-content: center;
+  align-items: center;
+}
+button {
+  border-radius: 3px;
+}
+input {
+  border-radius: 3px;
+}
+@media (min-width: 768px) and (max-width: 1022px) {
+  .search-btn {
+    width: 100px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 959px) {
+  .reviews {
+    margin-top: 20px;
+  }
+  .main-container {
+    flex-direction: column-reverse;
+  }
+  .map-div {
+    margin-top: 20px;
+  }
+  .add-yours {
+    margin-top: 10px;
+  }
+  .nav-infos {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .home-link {
+    display: none;
+  }
+  .nav-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

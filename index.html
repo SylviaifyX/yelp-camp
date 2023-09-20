@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/input.css" rel="stylesheet" />
+    <link href="./styles/output.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="./Styles/index.css" rel="stylesheet">
     <title>Yelp Camp</title>
 </head>
-<body>
-    
+
+<body class="lg:overflow-hidden">
+    <!-- for the landing page, to divide the page into sections -->
+    <!-- 1. first session on logo and image -->
+    <nav class="navibar fixed lg:mt-10 mx-auto lg:ml-20 mr-20 lg:px-10">
+        <a href="camp-list.html"><img class="lg:pl-20" src="./Assets/Logo.svg" alt="logo" /></a>
+    </nav>
+    <section class="main-container lg:ml-20 flex flex-col">
+        <aside class="image-div lg:h-full lg:w-2/4 lg:pl-20 sm:order-first lg:order-last">
+            <img class="desktop-view w-full object-cover object-center" src="./Assets/Hero Image.jpg">
+            <img class="tab-view w-full hidden object-cover object-center" src="./Assets/Hero Image (Tablet and Mobile).jpg">
+        </aside>
+
+        <!-- 2. second section on the other body, it has div elements to divide into smaller bits -->
+        <main class="lg:w-1/2 px-5 py-2 lg:pl-10 lg:mr-30 lg:pt-10">
+
+            <!-- heading and paragraphn -->
+            <section class="lg:px-5 py-2 lg:pl-20 lg:pt-20">
+                <h2 class="explore-text mb-2 text-5xl font-bold font-serif">
+                    Explore the best camps on Earth
+                </h2>
+
+                <p class="mt-5 mb-5 text-gray-800">
+                    YelpCamp is a curated list of the best camping spots on Earth.
+                    Unfiltered and unbiased reviews.
+                </p>
+
+                <!-- list of the services available -->
+                <ul class="my-3 flex flex-col gap-3 text-gray-800">
+                    <li class="flex gap-3">
+                        <span>
+                            <img src="./Assets/Checkmark.svg" />
+                        </span>
+                        Add your own camp suggestion
+                    </li>
+                    <li class="flex gap-3">
+                        <span>
+                            <img src="./Assets/Checkmark.svg" />
+                        </span>
+                        Leave reviews and experiences
+                    </li>
+                    <li class="flex gap-3">
+                        <span>
+                            <img src="./Assets/Checkmark.svg" />
+                        </span>
+                        See location for all camps
+                    </li>
+                </ul>
+                <button class="mt-5 mb-5 bg-gray-900 px-5 py-3 hover:bg-gray-500 text-white text-sm">
+                    <a href="camp-list.html">View Campgrounds</a>
+                </button>
+
+                <!-- footer containing sponsors -->
+                <section>
+                    <h4 class="font-bold text-gray-500">Partnered with</h4>
+                    <section class="flex flex-nowrap mt-3 mb-8">
+                        <img src="./Assets/Airbnb.svg" />
+                        <img src="./Assets/Booking.svg" />
+                        <img src="./Assets/Plum Guide.svg" />
+                    </section>
+                </section>
+            </section>
+        </main>
+    </section>
 </body>
+
+
 </html>
